@@ -19,6 +19,8 @@
 		26D58E55184B04B400B94D7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D58E3D184B04B400B94D7B /* UIKit.framework */; };
 		26D58E5D184B04B400B94D7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26D58E5B184B04B400B94D7B /* InfoPlist.strings */; };
 		26D58E5F184B04B400B94D7B /* MatchmakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D58E5E184B04B400B94D7B /* MatchmakerTests.m */; };
+		26D58E69184B087000B94D7B /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26D58E68184B087000B94D7B /* Questions.plist */; };
+		26D58E6B184B10A100B94D7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D58E6A184B10A100B94D7B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		26D58E5A184B04B400B94D7B /* MatchmakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchmakerTests-Info.plist"; sourceTree = "<group>"; };
 		26D58E5C184B04B400B94D7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26D58E5E184B04B400B94D7B /* MatchmakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchmakerTests.m; sourceTree = "<group>"; };
+		26D58E68184B087000B94D7B /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
+		26D58E6A184B10A100B94D7B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			children = (
 				26D58E48184B04B400B94D7B /* XYZAppDelegate.h */,
 				26D58E49184B04B400B94D7B /* XYZAppDelegate.m */,
+				26D58E6A184B10A100B94D7B /* Main.storyboard */,
 				26D58E4B184B04B400B94D7B /* Images.xcassets */,
 				26D58E40184B04B400B94D7B /* Supporting Files */,
 			);
@@ -122,6 +127,7 @@
 				26D58E42184B04B400B94D7B /* InfoPlist.strings */,
 				26D58E45184B04B400B94D7B /* main.m */,
 				26D58E47184B04B400B94D7B /* Matchmaker-Prefix.pch */,
+				26D58E68184B087000B94D7B /* Questions.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,6 +198,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Atallah;
 				TargetAttributes = {
+					26D58E35184B04B400B94D7B = {
+						DevelopmentTeam = 94773B96CG;
+					};
 					26D58E50184B04B400B94D7B = {
 						TestTargetID = 26D58E35184B04B400B94D7B;
 					};
@@ -220,8 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D58E69184B087000B94D7B /* Questions.plist in Resources */,
 				26D58E44184B04B400B94D7B /* InfoPlist.strings in Resources */,
 				26D58E4C184B04B400B94D7B /* Images.xcassets in Resources */,
+				26D58E6B184B10A100B94D7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,10 +371,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchmaker/Matchmaker-Prefix.pch";
 				INFOPLIST_FILE = "Matchmaker/Matchmaker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -373,10 +387,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchmaker/Matchmaker-Prefix.pch";
 				INFOPLIST_FILE = "Matchmaker/Matchmaker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
