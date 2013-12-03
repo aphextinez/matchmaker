@@ -1,18 +1,18 @@
 //
-//  XYZUserInfoViewController.m
+//  XYZFirstPageViewController.m
 //  Matchmaker
 //
 //  Created by Atallah on 12/1/13.
 //  Copyright (c) 2013 Atallah. All rights reserved.
 //
 
-#import "XYZUserInfoViewController.h"
+#import "XYZFirstPageViewController.h"
 
-@interface XYZUserInfoViewController ()
+@interface XYZFirstPageViewController ()
 
 @end
 
-@implementation XYZUserInfoViewController
+@implementation XYZFirstPageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

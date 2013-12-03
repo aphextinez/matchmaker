@@ -1,18 +1,18 @@
 //
-//  XYZUserInfoViewController.m
+//  XYZQuizPageViewController.m
 //  Matchmaker
 //
 //  Created by Atallah on 12/1/13.
 //  Copyright (c) 2013 Atallah. All rights reserved.
 //
 
-#import "XYZUserInfoViewController.h"
+#import "XYZQuizPageViewController.h"
 
-@interface XYZUserInfoViewController ()
+@interface XYZQuizPageViewController ()
 
 @end
 
-@implementation XYZUserInfoViewController
+@implementation XYZQuizPageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
